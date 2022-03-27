@@ -7,6 +7,6 @@ buttonIconDice.addEventListener("click", () => {
         .then((response) => response.json())
         .then((result) => {
             adviceId.innerHTML = "ADVICE #" + result.slip.id;
-            advice.innerHTML = `"${result.slip.advice}"`;
+            advice.innerHTML = `“${result.slip.advice}”`;
         })
 })
