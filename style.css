@@ -1,5 +1,7 @@
 body {
+  background-color: hsl(218, 23%, 16%);
   font-family: "Overpass", sans-serif;
+  font-weight: 800;
   margin: 0;
 }
 .advice {
@@ -11,16 +13,18 @@ body {
     display: none;
   }
   .container {
-    border: 1px solid;
+    background-color: hsl(217, 19%, 24%);
+    color: hsl(193, 38%, 86%);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 30% auto 0 auto;
-    /*height: 296px;*/
+    border-radius: 12px;
     width: 95%;
   }
   .advice-id {
+    color: hsl(150, 100%, 66%);
     padding-top: 35px;
     font-size: 12px;
     letter-spacing: 2px;
@@ -31,22 +35,73 @@ body {
     padding-bottom: 50px;
   }
   .icon-dice-container {
+    background-color: hsl(150, 100%, 66%);
+    text-align: center;
     margin-top: -30px;
-    border: 1px solid;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    margin-left: auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 66px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border: none;
     margin-right: auto;
+    margin-left: auto;
+    display: block;
   }
-  .icon-dice-svg{
-    padding-top: 14px;
-    padding-left: 13px;
-    position: relative;
+  .icon-dice-svg {
+    padding-top: 5px;
   }
 }
 @media screen and (min-width: 377px) {
   .pause-mobile {
     display: none;
+  }
+  .container {
+    background-color: hsl(217, 19%, 24%);
+    color: hsl(193, 38%, 86%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10% auto 0 auto;
+    border-radius: 12px;
+    width: 500px;
+  }
+  .advice-id {
+    color: hsl(150, 100%, 66%);
+    padding-top: 35px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  .pause-desktop {
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  .icon-dice-container {
+    background-color: hsl(150, 100%, 66%);
+    text-align: center;
+    margin-top: -30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 66px;
+    margin-left: auto;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border: none;
+    display: block;
+    margin-right: auto;
+    transition: 0.2s;
+
+  }
+  .icon-dice-container:hover{
+    box-shadow:0px 0px 32px hsl(150, 100%, 66%);
+    transition: 0.2s;
+    transform: translateY(-3px);
+  }
+  .icon-dice-svg {
+    padding-top: 5px;
   }
 }
