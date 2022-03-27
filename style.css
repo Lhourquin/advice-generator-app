@@ -1,0 +1,52 @@
+body {
+  font-family: "Overpass", sans-serif;
+  margin: 0;
+}
+.advice {
+  font-size: 28px;
+  padding: 5px;
+}
+@media screen and (max-width: 376px) {
+  .pause-desktop {
+    display: none;
+  }
+  .container {
+    border: 1px solid;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30% auto 0 auto;
+    /*height: 296px;*/
+    width: 95%;
+  }
+  .advice-id {
+    padding-top: 35px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  .pause-mobile {
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  .icon-dice-container {
+    margin-top: -30px;
+    border: 1px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .icon-dice-svg{
+    padding-top: 14px;
+    padding-left: 13px;
+    position: relative;
+  }
+}
+@media screen and (min-width: 377px) {
+  .pause-mobile {
+    display: none;
+  }
+}
